@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram ft. Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="nav text-bg-light p-3 d-flex justify-content-between">
+            <div class="logo d-inline-flex p-2">
+                <i class="fa-brands fa-instagram fs-2 "></i>
+                <h1 class="fs-5 ms-1">Instagram</h1>
+            </div>
+            <div class="iconos d-inline-flex p-2">
+                <div class="new_post">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Create a new post
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+
+                                </div>
+                                <div class="modal-body">Caption:
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" placeholder="Leave a comment here"
+                                            id="floatingTextareaDisabled" disabled></textarea>
+                                        <label for="floatingTextareaDisabled">Add the caption of yout post
+                                            here</label>
+                                    </div>
+                                    <div class="d-grid gap-2 d-md-block">
+                                        <button class="btn btn-light" type="button"><i
+                                                class="fa-solid fa-camera"></i></button>
+                                        <button class="btn btn-light" type="button"> <i
+                                                class="fa-solid fa-location-dot"></i></button>
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
+
+
+        <div class="ajustes ms-1">
+            <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-gear"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><button class="dropdown-item" type="button">Profile</button></li>
+                    <li><button class="dropdown-item" type="button">Accesibility</button></li>
+                    <li><button class="dropdown-item" type="button">Privacy and Data</button></li>
+                    <li><button class="dropdown-item text-danger border-top" type="button">Log out</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="body">
+        <div class="dropdowns d-flex justify-content-center align-items-center w-100">
+            <div class="d-flex">
+                <div class="p-2">
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#gridView"
+                        aria-expanded="true" aria-controls="gridView">
+                        <i class="fa-solid fa-table-cells"></i>
+                    </button>
+                </div>
+                <div class="p-2">
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#otherContent"
+                        aria-expanded="false" aria-controls="otherContent">
+                        <i class="fa-solid fa-square"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <div id="gridView" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+
+                        <img class="img-fluid"
+                            src="https://img.freepik.com/vector-gratis/linda-chica-hacker-operando-laptop-dibujos-animados-vector-icono-ilustracion-personas-tecnologia-aislada-plana_138676-9487.jpg?w=1380&t=st=1719852744~exp=1719853344~hmac=33dece44a1385fffd1a45f71d465f96eeec6bff77d07f0c18d45150ecd6bad6b"
+                            alt="Chica estudiando">
+
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img class="img-fluid"
+                            src="https://img.freepik.com/foto-gratis/entrenamiento-personajes-dibujos-animados_23-2151148985.jpg?w=1380&t=st=1719852927~exp=1719853527~hmac=51f7e3c1c3b576421f756dd877daa456aaf6132869fa7a27a9681be7fee4f081"
+                            alt="Chica entrenando">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img class="img-fluid"
+                            src="https://www.creativefabrica.com/wp-content/uploads/2022/12/14/A-Cartoon-Chef-Cooking-Food-52400907-1.png"
+                            alt="Señor random cocinando">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img class="img-fluid"
+                            src="https://images.squarespace-cdn.com/content/v1/589f5ac0b3db2b3945379d79/1568644072778-BUD7WZKUJEV09NGVY67V/The+Benefits+of+Coding+for+Kids?format=2500w"
+                            alt="Prácticas de la programación">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img class="img-fluid"
+                            src="https://www.amayasport.com/es/2161-tm_large_default/patin-de-velocidad-competicion.jpg"
+                            alt="Patinaje de velocidad">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img class="img-fluid"
+                            src="https://www.imprentaonline.net/blog/wp-content/webpc-passthru.php?src=https://www.imprentaonline.net/blog/wp-content/uploads/rotulo-mcdonals.png&nocache=1"
+                            alt="McDonald's">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img class="img-fluid" src="https://www.cde.ual.es/wp-content/uploads/2024/02/RUSIA.jpg"
+                            alt="Rusia">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img class="img-fluid" src="https://debandera.es/731-large_default/bandera-de-marruecos.jpg"
+                            alt="Marruecos">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img class="img-fluid" src="https://cepaq.pe/wp-content/uploads/2023/07/img_4868.jpg"
+                            alt="Resilencia">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div id="otherContent" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="container mt-4">
+                    <div class="d-flex flex-column align-items-center">
+
+                        <div class="col-md-6 mb-4">
+                            <div class="card">
+
+                                <div class="card-body">
+                                    <div class="row g-0">
+                                        <div class="col-sm-6 col-md-8">
+                                            <h5 class="card-title">Concetrada estudiando con 4Geeks!</h5>
+                                        </div>
+                                        <div class="col-6 col-md-4">
+                                            <div class="text-end text-muted">17/06</div>
+                                        </div>
+                                    </div>
+                                    <img src="https://img.freepik.com/vector-gratis/linda-chica-hacker-operando-laptop-dibujos-animados-vector-icono-ilustracion-personas-tecnologia-aislada-plana_138676-9487.jpg?w=1380&t=st=1719852744~exp=1719853344~hmac=33dece44a1385fffd1a45f71d465f96eeec6bff77d07f0c18d45150ecd6bad6b"
+                                        class="card-img-top img-fluid" alt="Humana estudiando">
+                                    <p class="card-text"><strong>100k Likes</strong></p>
+                                    <p class="card-text">Todos los días dedico parte de mi tiempo en convertirme
+                                        en
+                                        una gran
+                                        FullStack Developer.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row g-0">
+                                        <div class="col-sm-6 col-md-8">
+                                            <h5 class="card-title">Deporte físico y desconexión mental</h5>
+                                        </div>
+                                        <div class="col-6 col-md-4">
+                                            <div class="text-end text-muted">30/09</div>
+                                        </div>
+                                    </div>
+                                    <img src="https://img.freepik.com/foto-gratis/entrenamiento-personajes-dibujos-animados_23-2151148985.jpg?w=1380&t=st=1719852927~exp=1719853527~hmac=51f7e3c1c3b576421f756dd877daa456aaf6132869fa7a27a9681be7fee4f081"
+                                        class="card-img-top img-fluid" alt="Humana haciendo deporte">
+                                    <p class="card-text"><strong>2 Dislikes</strong></p>
+                                    <p class="card-text">Aunque es costoso, resulta satisfactorio al terminal la
+                                        rutina de
+                                        gimnasio</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row g-0">
+                                        <div class="col-sm-6 col-md-8">
+                                            <h5 class="card-title">Cuerpo sano, mente sana</h5>
+                                        </div>
+                                        <div class="col-6 col-md-4">
+                                            <div class="text-end text-muted">10/12</div>
+                                        </div>
+                                    </div>
+                                    <img src="https://www.creativefabrica.com/wp-content/uploads/2022/12/14/A-Cartoon-Chef-Cooking-Food-52400907-1.png"
+                                        class="card-img-top img-fluid" alt="Humana cocinando apurada">
+                                    <p class="card-text"><strong> 313 Likes</strong></p>
+                                    <p class="card-text">Me encanta seguir una dieta balanceada y equilibrada.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
